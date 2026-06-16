@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceFolder}/app/inc",
+                "${workspaceFolder}/libopencm3/include",
+                "${workspaceFolder}/shared/inc",
+                "/opt/homebrew/lib/gcc/arm-none-eabi/15.2.1/include",
+                "/opt/homebrew/lib/gcc/arm-none-eabi/15.2.1/include-fixed"
+            ],
+            "defines": [
+                "STM32F4",
+                "__ARM_ARCH_7EM__",
+                "__thumb__"
+            ],
+            "compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                "-mfpu=fpv4-sp-d16",
+                "-mfloat-abi=hard"
+            ],
+            "cStandard": "c17",
+            "intelliSenseMode": "gcc-arm",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

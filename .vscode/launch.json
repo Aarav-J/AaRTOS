@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32 (ST-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "external",
+            "gdbTarget": "localhost:3333",
+            "cwd": "${workspaceFolder}/app",
+            "preLaunchTask": "make build",
+            "executable": "${workspaceFolder}/app/firmware.elf",
+            "device": "STM32F407xx",
+            "runToEntryPoint": "main",
+            "gdbPath": "/opt/homebrew/bin/arm-none-eabi-gdb"
+        }
+    ]
+}

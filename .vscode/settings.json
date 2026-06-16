@@ -1,0 +1,14 @@
+{
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.codeAnalysis.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.enabled": false,
+    "C_Cpp.default.cppStandard": "c17",
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc",
+    "files.exclude": {
+        "**/.git": true
+    },
+    "extensions.ignoreRecommendations": true
+}
